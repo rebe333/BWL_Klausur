@@ -1,0 +1,47 @@
+\documentclass[12pt, a4paper]{article}
+
+% --- Pakete für Sprache und Schriftart ---
+\usepackage[utf8]{inputenc} % Ermöglicht Umlaute direkt im Text
+\usepackage[ngerman]{babel} % Deutsche Silbentrennung und Bezeichnungen
+\usepackage[T1]{fontenc}    % Schöne Schriftdarstellung
+\usepackage{lmodern}        % Nutzt die modernere "Latin Modern" Schrift
+
+% --- Layout & Design ---
+\usepackage{geometry}
+\geometry{left=2.5cm, right=2.5cm, top=3cm, bottom=3cm} % Seitenränder
+\usepackage{microtype}     % Verbessert den Textsatz (weniger Trennungsfehler)
+
+% --- Grafiken & Mathe ---
+\usepackage{graphicx}      % Zum Einbinden von Bildern
+\usepackage{amsmath}       % Mathematische Formeln
+\usepackage{amssymb}
+
+% --- Meta-Daten ---
+\title{Mein erstes LaTeX-Projekt}
+\author{Dein Name}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\newpage
+
+\section{Einleitung}
+Dies ist ein einfaches LaTeX-Dokument, das in VSCodium erstellt wurde. Du kannst hier ganz normal losschreiben. Umlaute wie ä, ö und ü funktionieren direkt.
+
+\section{Mathematische Formeln}
+Du kannst mathematische Formeln direkt im Text wie $E = m \cdot c^2$ einbetten oder als eigene Zeile darstellen:
+$$f(x) = \int_{a}^{b} x^2 \, dx$$
+
+\section{Bilder einbinden}
+Um Bilder zu nutzen, kannst du sie einfach in einen Unterordner (z.B. \texttt{images/}) legen und so einbinden:
+% \begin{figure}[h]
+%     \centering
+%     \includegraphics[width=0.5\textwidth]{images/mein-bild.png}
+%     \caption{Eine Bildbeschreibung}
+%     \label{fig:mein-bild}
+% \end{figure}
+
+\end{document}

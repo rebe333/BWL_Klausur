@@ -1,0 +1,18 @@
+# LaTeX Hilfsdateien
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.pdf
+*.bbl
+*.blg
+*.lof
+*.lot
+*.run.xml
+*-blx.bib
+
+# VSCodium / VS Code Einstellungen
+.vscode/
