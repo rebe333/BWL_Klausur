@@ -15,7 +15,9 @@
 \usepackage{graphicx}      % Zum Einbinden von Bildern
 \usepackage{amsmath}       % Mathematische Formeln
 \usepackage{amssymb}
-
+\usepackage{booktabs}
+\usepackage{tabularx}
+\newcolumntype{Y}{>{\centering\arraybackslash}X} % Zentrierte Spalte mit automatischer Breite
 % --- Meta-Daten ---
 \title{BWL - Klausur}
 \author{Rebecca Schäfer}
@@ -254,6 +256,117 @@ Als Ihr Assistent empfehle ich, Lean Management nicht als reines Sparprogramm, s
 \end{itemize}
 Durch die konsequente Anwendung von Kaizen und Ishikawa können wir die Effizienz so steigern, dass das angestrebte Wachstum von 
 Herrn Heumann trotz angespannter Kostensituation profitabel realisiert werden kann.
+
+\section{Standortwahl}
+
+\subsection{Einleitung: Bedeutung der Standortwahl}
+Die Standortwahl ist eine langfristige, strategische Entscheidung über die geografische 
+Lage eines Unternehmens oder einzelner Betriebsteile. Sie ist deshalb so wichtig, 
+weil sie die wirtschaftliche Anziehungskraft, die Kostenstruktur (z. B. durch Steuern oder Transport) 
+und die Verfügbarkeit von Ressourcen und Fachkräften maßgeblich beeinflusst. Da wir bei 
+Speed in Einzelarbeit fertigen, ist die Nähe zu hochqualifizierten, motivierten Fachkräften für uns existenziell.
+
+\subsection{Kriterien der Standortwahl}
+Gemäß der Systematisierung unterscheiden wir zwischen harten (monetär quantifizierbaren) und weichen (subjektiven/qualitativen) Faktoren.
+Vier harte Standortfaktoren:
+\begin{enumerate}
+    \item Steuerbelastung: Regionale Unterschiede bei Gewerbesteuerhebesätzen.
+    \item Energiekosten: Preise für Strom und Öl, die unsere Produktion belasten.
+    \item Subventionen: Staatliche Fördergelder oder Sonderabschreibungen für Neuansiedlungen (Buchkorrektur zu S. 240).
+    \item Verkehrsanbindung: Anbindung an Schiene, Straße oder Flughäfen für Materialbeschaffung und Absatz.
+\end{enumerate}
+    
+Vier weiche Standortfaktoren:
+\begin{enumerate}
+    \item Motivation und Pünktlichkeit: Die Arbeitseinstellung der Fachkräfte vor Ort (Buchkorrektur zu S. 239).
+    \item Wohn- und Freizeitwert: Attraktivität der Region für Mitarbeiter, um dem Fachkräftemangel entgegenzuwirken.
+    \item Image der Region: Das Prestige eines Standorts (z. B. „Made in Germany“ oder eine bekannte Motorrad-Region).
+    \item Umweltschutz: Ökologische Standards und das öffentliche Bewusstsein vor Ort (Buchkorrektur zu S. 239).
+\end{enumerate}
+
+\subsection{0Entscheidungsbewertungsmatrix (Nutzwertanalyse)}
+Für die Expansion der Speed Motorradfabrik vergleichen wir drei fiktive Standorte (A, B, C) 
+anhand objektiver Kriterien (Buchkorrektur zu S. 328). Ein K.O.-Kriterium ist eine Autobahnanbindung in maximal 5 km Entfernung.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Nutzwertanalyse der Standortalternativen}
+  \label{tab:nutzwertanalyse}
+  \small
+  \begin{tabularx}{\textwidth}{l c YY YY YY}
+    \toprule
+    \textbf{Standortkriterien} & \textbf{Gewicht} & \multicolumn{2}{c}{\textbf{Standort A}} & \multicolumn{2}{c}{\textbf{Standort B}} & \multicolumn{2}{c}{\textbf{Standort C}} \\
+    & \textbf{(G)} & \multicolumn{2}{c}{\textbf{(Ulm Umland)}} & \multicolumn{2}{c}{\textbf{(Stuttgart)}} & \multicolumn{2}{c}{\textbf{(Sachsen)}} \\
+    \cmidrule(lr){3-4} \cmidrule(lr){5-6} \cmidrule(lr){7-8}
+    & & \textbf{B} & \textbf{G $\times$ B} & \textbf{B} & \textbf{G $\times$ B} & \textbf{B} & \textbf{G $\times$ B} \\
+    \midrule
+    Verfügbarkeit Fachkräfte & 0,35 & 5 & 1,75 & 4 & 1,40 & 3 & 1,05 \\
+    Steuerbelastung          & 0,20 & 3 & 0,60 & 2 & 0,40 & 5 & 1,00 \\
+    Erweiterungsflächen      & 0,15 & 4 & 0,60 & 2 & 0,30 & 5 & 0,75 \\
+    Motivation/Klima         & 0,30 & 5 & 1,50 & 3 & 0,90 & 4 & 1,20 \\
+    \midrule
+    \textbf{Summe (Nutzen)}  & \textbf{1,00} & & \textbf{4,45} & & \textbf{3,00} & & \textbf{4,00} \\
+    \textbf{Rangfolge}       &               & & \textbf{1.}   & & \textbf{3.}   & & \textbf{2.}   \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+Bewertungsskala: 5 = sehr gut, 1 = mangelhaft. Ergebnis: Standort A ist aufgrund der Verfügbarkeit hochmotivierter Fachkräfte und des guten Klimas am besten geeignet.
+
+\subsection{Fälle, in denen der Standort eine untergeordnete Rolle spielt}
+Es gibt Situationen, in denen die geografische Lage kaum Einfluss auf den Unternehmenserfolg hat:
+\begin{enumerate}
+    \item Digitale Produkte/Dienstleistungen: Bei reinen Online-Angeboten (z. B. Software-Entwicklung) erfolgt die Leistungserstellung und der Absatz virtuell; physische Transportwege entfallen.
+    \item Monopolstellung oder extremes Nischenprodukt: Wenn ein Produkt so einzigartig ist (z. B. eine ganz spezielle High-End-Spezialanfertigung von Speed), kommen die Kunden unabhängig vom Standort zum Hersteller („Pilgercharakter“).
+    \item Produkte mit extrem hohem Wert bei geringem Gewicht: Wenn die Transportkosten im Verhältnis zum Verkaufspreis gegen Null tendieren (z. B. Mikrochips oder Diamanten), ist die Nähe zum Kunden oder Rohstoff zweitrangig
+\end{enumerate}
+
+\subsection{Fazit}
+Für die Speed Motorradfabrik GmbH ist die Standortwahl aufgrund der Einzelfertigung und der 
+Abhängigkeit von Spezialisten kritisch. Wir sollten Standorte bevorzugen, die nicht nur
+harte Kostenvorteile bieten, sondern durch einen hohen Freizeitwert und eine gute Arbeitsmoral 
+(weiche Faktoren) unsere Fachkräfte langfristig binden.
+
+\section{Wettbewerbsstrategien}
+\subsection{Einleitung: Die Wettbewerbsstrategien nach Porter}
+Der Ökonom Michael E. Porter entwickelte drei grundlegende Strategietypen, 
+mit denen sich ein Unternehmen gegenüber der Konkurrenz positionieren kann, 
+um einen strategischen Vorteil zu erlangen:
+\begin{enumerate}
+    \item  Umfassende Kostenführerschaft (Niedrigpreisstrategie).
+    \item  Differenzierung (Qualitätsführerschaft/Präferenzstrategie)
+    \item  Konzentration auf Schwerpunkte (Nischenstrategie).
+\end{enumerate}
+Ziel ist es, eine „Einzigartigkeit aus Sicht des Käufers“ oder einen „Kostenvorsprung“ zu erreichen.
+
+\subsection{Hauptteil: Die Differenzierungsstrategie bei Speed Motorrad}
+Für die Speed Motorradfabrik GmbH ist die Differenzierungsstrategie die maßgebliche Wettbewerbsstrategie. Hierbei werden Produkte angestrebt, die in der gesamten Branche als einzigartig angesehen werden, um dem Verbraucher einen besonderen Nutzenvorteil zu vermitteln.
+Anwendung auf die Situation der Speed Motorradfabrik GmbH:
+\begin{itemize}
+    \item Leistungsprogramm (Industriebegriff gemäß): Unser Programm umfasst nur drei Typen von Motorrädern, die jedoch in absoluter Spitzenqualität gefertigt werden.
+    \item Einzigartige Produktion: Die Fertigung erfolgt in Einzelarbeit. Ein Mitarbeiter fertigt ein Motorrad von A bis Z und übergibt es persönlich dem Kunden. Dies hebt uns deutlich vom Wettbewerb (z. B. Fließbandfertigung) ab.
+    \item Spezialanfertigungen: Wir bieten die Möglichkeit, auf individuelle Kundenwünsche einzugehen, was die Einzigartigkeit unserer Leistungen unterstreicht.
+    \item Marktsegment: Wir bewegen uns ausschließlich im Premiumsegment mit stark motorisierten Maschinen.
+    \item Preisgestaltung: Da das Kaufentscheidungs-Argument die Qualität und nicht der Preis ist, können wir eine Hochpreispolitik verfolgen, bei der die Kunden bereit sind, für den Zusatznutzen mehr zu bezahlen.
+    \item Kundenloyalität: Die hohe Weiterempfehlungsrate (40 Prozent Neukunden durch Mund-zu-Mund-Propaganda) belegt eine extrem hohe Kundenzufriedenheit und -bindung.
+\end{itemize}
+
+\subsectin{Vorschläge und Fazit}
+\begin{itemize}
+    \item Sicherung der Rentabilität: Unsere aktuelle Umsatzrendite von 12,5 % liegt weit über dem branchenüblichen Zielwert von 5–8 %. Um diesen Vorsprung zu halten, müssen wir trotz der „steigenden Kostensituation“ an unserem Qualitätsversprechen festhalten.
+    \item Gefahr der „Mitte“: Porter warnt vor der Unvereinbarkeitshypothese („stuck in the middle“). Wir dürfen keinesfalls versuchen, über den Preis mit Massenherstellern zu konkurrieren, da dies unsere Differenzierung und damit unsere Existenzgrundlage zerstören würde.
+    \item Expansionskurs: Da Herr Heumann weiter wachsen will, sollte die regionale Expansion unter strikter Beibehaltung der Einzelfertigung erfolgen, da dies unser zentrales Alleinstellungsmerkmal ist.
+\end{itemize}
+Fazit: Die Speed Motorradfabrik GmbH ist ein Paradebeispiel für eine erfolgreiche Differenzierungsstrategie.
+Der Fokus auf Spitzenqualität und die einzigartige Fertigungsmethode schützen uns vor direktem Preiswettbewerb und sichern überdurchschnittliche Gewinne.
+
+\section{Preispolitik}
+\subsection{Einleitung: Was ist Preispolitik?}
+Die Preispolitik umfasst alle Entscheidungen und Maßnahmen eines Unternehmens,
+welche die Gestaltung der Preise für seine Leistungen betreffen. Ein wesentlicher
+Einflussfaktor ist dabei der Markt, wobei zu berücksichtigen ist, dass Preise in der 
+Realität stets auf unvollkommenen Märkten entstehen. Ziel ist es, unter Beachtung 
+von Kosten, Nachfrage und Konkurrenz eine Strategie zu wählen, die den Unternehmenserfolg langfristig sichert.
 
 
 \section{Bilder einbinden}
